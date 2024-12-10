@@ -152,6 +152,45 @@ header nav {
   }
 }
 
+/* Basic dropdown styles */
+.menu .dropdown {
+  position: relative;
+}
+
+.menu .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  z-index: 1000;
+}
+
+.menu .dropdown-menu li {
+  padding: 10px 20px;
+}
+
+.menu .dropdown-menu li a {
+  text-decoration: none;
+  color: #1e1b16;
+  display: block;
+  transition: background-color 0.3s ease;
+}
+
+.menu .dropdown-menu li a:hover {
+  background-color: #dd1843;
+  color: #fff;
+}
+
+/* Show the dropdown when active */
+.menu .dropdown-menu.active {
+  display: block;
+}
+
 .textcenter {
   text-align: center;
 }

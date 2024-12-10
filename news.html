@@ -31,7 +31,14 @@
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="news.html">NYHEDER</a></li>
                 <li><a href="workshop.html">VÆRKSTEDET</a></li>
-                <li><a href="products.html">SMYKKER</a></li>
+                <li class="dropdown">
+                    <a href="products.html" onclick="toggleDropdown(event, 'products-dropdown')">SMYKKER</a>
+                    <ul class="dropdown-menu" id="products-dropdown">
+                        <li><a href="rings.html">Rings</a></li>
+                        <li><a href="necklaces.html">Necklaces</a></li>
+                        <li><a href="bracelets.html">Bracelets</a></li>
+                    </ul>
+                </li>
             </ul>
         </nav>
     </header>

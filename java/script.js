@@ -26,3 +26,12 @@ function toggleMenu(menuType) {
     }
   }
 }
+
+function toggleDropdown(event, dropdownId) {
+  event.preventDefault(); // Prevent navigation
+  const dropdownMenu = document.getElementById(dropdownId);
+
+  if (dropdownMenu) {
+    dropdownMenu.classList.toggle("active");
+  }
+}
