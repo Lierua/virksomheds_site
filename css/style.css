@@ -10,6 +10,27 @@ img {
   display: block;
 }
 
+h1 {
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  color: #ddc583;
+}
+
+h2 {
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  color: #202124;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  color: #202124;
+}
+
+a {
+  font-family: "Inria Sans", serif;
+}
+
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.461), rgba(0, 0, 0, 0));
 }
@@ -69,7 +90,7 @@ a {
 header nav {
   padding-top: 1.2rem;
   font-weight: bold;
-  width: 450px;
+  width: 400px;
   margin: 0 auto;
 }
 
