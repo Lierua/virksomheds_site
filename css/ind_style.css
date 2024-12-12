@@ -1,0 +1,71 @@
+.index_hero {
+  position: relative;
+  text-align: center;
+}
+
+.index_hero img {
+  width: 100%;
+  height: block;
+}
+
+.cta_knap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.cta_knap button {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #ddc583;
+  border: 2px solid #ddc583;
+  padding: 5px 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.værkstedet,
+.nyheder,
+.produkter {
+  text-align: center;
+  background-color: #e9e0d8; /* Baggrundsfarve for hele kassen */
+
+  overflow: hidden;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Let skygge for dybde */
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.index h1 {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 1.5rem;
+}
+
+@media (min-width: 800px) {
+  /*******layout******/
+  .index1_1_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .index1_1_1 img {
+    margin-bottom: 10px;
+    height: 300px; /* Ens højde for alle billeder */
+    object-fit: cover;
+  }
+
+  /*******styling******/
+  .værkstedet,
+  .nyheder,
+  .produkter {
+    text-align: center;
+    background-color: #e9e0d8; /* Baggrundsfarve for hele kassen */
+    overflow: hidden;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Let skygge for dybde */
+    padding: 10px;
+  }
+}
