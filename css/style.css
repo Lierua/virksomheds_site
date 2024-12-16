@@ -31,9 +31,31 @@ a {
   font-family: "Inria Sans", serif;
 }
 
-header {
+.linear-gradient {
   background-image: linear-gradient(rgba(0, 0, 0, 0.461), rgba(0, 0, 0, 0));
 }
+
+header {
+  width: 100%;
+  position: fixed;
+  height: 120px;
+}
+
+.scroll-container {
+  height: 15vh;
+  background: #1e1b167f;
+  transition: background 0.1s ease-out;
+}
+
+@media (max-width: 800px) {
+  .scroll-container {
+    height: 8vh;
+  }
+}
+
+/* .whitebg {
+  background-color: #fff;
+} */
 
 #logo {
   padding: 1rem;
@@ -70,7 +92,7 @@ header {
 }
 
 .menu a {
-  color: #1e1b16;
+  color: #ffffff;
 
   text-decoration: none;
   padding: 10px;
@@ -84,7 +106,7 @@ a {
 }
 
 .menu a:hover {
-  color: #dd1843;
+  color: #ddc583;
 }
 
 header nav {
@@ -119,7 +141,7 @@ header nav {
     position: absolute;
     right: 0;
     width: 100%;
-    background-color: #dd1843;
+    background-color: #ddc583;
     z-index: 10;
     transition: transform 0.3s ease;
     height: 844px;
@@ -192,7 +214,7 @@ header nav {
 }
 
 .menu .dropdown-menu li {
-  padding: 10px 20px;
+  padding: 0;
 }
 
 .menu .dropdown-menu li a {
@@ -203,7 +225,7 @@ header nav {
 }
 
 .menu .dropdown-menu li a:hover {
-  background-color: #dd1843;
+  background-color: #ddc583;
   color: #fff;
 }
 
@@ -218,4 +240,8 @@ header nav {
 
 .center {
   margin: 0 auto;
+}
+
+.text-change {
+  color: white;
 }
