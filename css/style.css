@@ -31,25 +31,9 @@ a {
   font-family: "Inria Sans", serif;
 }
 
-.linear-gradient {
+header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.461), rgba(0, 0, 0, 0));
 }
-
-header {
-  width: 100%;
-  position: fixed;
-  height: 120px;
-}
-
-.scroll-container {
-  height: 15vh;
-  background: #1e1b167f;
-  transition: background 0.1s ease-out;
-}
-
-/* .whitebg {
-  background-color: #fff;
-} */
 
 #logo {
   padding: 1rem;
@@ -65,7 +49,7 @@ header {
   width: 30px;
   height: 25px;
   cursor: pointer;
-  margin: 1rem 1rem 0 0;
+  margin: 1.2rem 1.2rem 0 0;
   z-index: 11;
 }
 
@@ -86,7 +70,7 @@ header {
 }
 
 .menu a {
-  color: #ffffff;
+  color: #1e1b16;
 
   text-decoration: none;
   padding: 10px;
@@ -100,7 +84,7 @@ a {
 }
 
 .menu a:hover {
-  color: #ddc583;
+  color: #dd1843;
 }
 
 header nav {
@@ -135,7 +119,7 @@ header nav {
     position: absolute;
     right: 0;
     width: 100%;
-    background-color: #ddc583;
+    background-color: #dd1843;
     z-index: 10;
     transition: transform 0.3s ease;
     height: 844px;
@@ -208,7 +192,7 @@ header nav {
 }
 
 .menu .dropdown-menu li {
-  padding: 0;
+  padding: 10px 20px;
 }
 
 .menu .dropdown-menu li a {
@@ -219,7 +203,7 @@ header nav {
 }
 
 .menu .dropdown-menu li a:hover {
-  background-color: #ddc583;
+  background-color: #dd1843;
   color: #fff;
 }
 
@@ -234,8 +218,4 @@ header nav {
 
 .center {
   margin: 0 auto;
-}
-
-.text-change {
-  color: white;
 }
