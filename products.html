@@ -17,10 +17,10 @@
 
 <body>
     <!-- Header -->
-    <header class="flexrow">
+    <header id="header" class="flexrow scroll-container">
         <div id="underheader">
             <a href="index.html"> Logo </a>
-            <h2 class="textcenter center">
+            <h2 class="textcenter center text-change">
                 Müller
             </h2>
         </div>
@@ -30,14 +30,22 @@
             <span></span>
         </div>
         <nav>
-            <ul class="menu">
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="news.html">NYHEDER</a></li>
-                <li><a href="workshop.html">VÆRKSTEDET</a></li>
-                <li><a href="products.html">SMYKKER</a></li>
+            <ul class="menu content">
+                <li><a class="text-change" href="index.html">HOME</a></li>
+                <li><a class="text-change" href="news.html">NYHEDER</a></li>
+                <li><a class="text-change" href="workshop.html">VÆRKSTEDET</a></li>
+                <li class="dropdown">
+                    <a class="text-change" href="products.html"
+                        onclick="toggleDropdown(event, 'products-dropdown')">SMYKKER</a>
+                    <ul class="dropdown-menu" id="products-dropdown">
+                        <li><a href="products.html">Alle Produkter</a></li>
+                        <li><a href="rings.html">Rings</a></li>
+                        <li><a href="necklaces.html">Necklaces</a></li>
+                        <li><a href="bracelets.html">Bracelets</a></li>
+                    </ul>
+                </li>
             </ul>
         </nav>
-
     </header>
 
     <main>
