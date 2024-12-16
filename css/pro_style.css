@@ -1,0 +1,712 @@
+/* Reset and General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+h1 {
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  color: #ddc583;
+}
+
+h2 {
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  color: #202124;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  color: #202124;
+}
+
+a {
+  font-family: "Inria Sans", serif;
+}
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.461), rgba(0, 0, 0, 0));
+}
+
+#logo {
+  padding: 1rem;
+}
+
+/* Burger menuens base kode fra Chatgpt */
+
+/* Burger menu */
+.burger-menu {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 25px;
+  cursor: pointer;
+  margin: 1rem 1rem 0 0;
+  z-index: 11;
+}
+
+.burger-menu span {
+  display: block;
+  height: 4px;
+  width: 100%;
+  background-color: #1e1b16;
+  border-radius: 2px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Menu */
+.menu {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.menu a {
+  color: #1e1b16;
+
+  text-decoration: none;
+  padding: 10px;
+  transition: color 0.3s ease;
+}
+
+.menu a:hover {
+  color: #dd1843;
+}
+
+header nav {
+  padding-top: 1.2rem;
+  font-weight: bold;
+  width: 400px;
+  margin: 0 auto;
+}
+
+#underheader {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  z-index: 11;
+}
+
+/* Media queries for mobile view */
+@media (max-width: 800px) {
+  .flexrow {
+    display: flex;
+    justify-content: space-between;
+  }
+  .burger-menu {
+    display: flex;
+  }
+  .burger-menumono {
+    display: flex;
+  }
+  nav {
+    display: none; /* Hide nav by default */
+    position: absolute;
+    right: 0;
+    width: 100%;
+    background-color: #dd1843;
+    z-index: 10;
+    transition: transform 0.3s ease;
+    height: 844px;
+    font-size: 140%;
+    top: 0;
+    padding: 2rem;
+  }
+
+  .menu {
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    display: block;
+    text-align: left;
+    margin-top: 6rem;
+  }
+
+  .menu li {
+    margin: 50px 0;
+  }
+
+  nav.active {
+    display: block; /* Show nav when active */
+    transform: translateX(0);
+    width: 100%;
+  }
+
+  /* Animation for burger menu transformation */
+  .burger-menu.open span:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+  }
+
+  .burger-menu.open span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .burger-menu.open span:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
+  }
+  /* Animation for burger menu transformation */
+  .burger-menumono.open span:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+  }
+
+  .burger-menumono.open span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .burger-menumono.open span:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
+  }
+}
+
+/* Basic dropdown styles */
+.menu .dropdown {
+  position: relative;
+}
+
+.menu .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  z-index: 1000;
+}
+
+.menu .dropdown-menu li {
+  padding: 10px 20px;
+}
+
+.menu .dropdown-menu li a {
+  text-decoration: none;
+  color: #1e1b16;
+  display: block;
+  transition: background-color 0.3s ease;
+}
+
+.menu .dropdown-menu li a:hover {
+  background-color: #dd1843;
+  color: #fff;
+}
+
+/* Show the dropdown when active */
+.menu .dropdown-menu.active {
+  display: block;
+}
+
+.textcenter {
+  text-align: center;
+}
+
+.center {
+  margin: 0 auto;
+}
+
+/**********************************  HERO ***********************************/
+
+/* Hero Section Container */
+.hero-container {
+  margin-bottom: 5rem;
+  margin-top: 0.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 1-1 layout */
+  gap: 0.5rem;
+  height: 100vh;
+  align-items: center;
+}
+
+.hero1 {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: url("all product img/hero img/forherdark.webp") no-repeat center center/cover;
+}
+
+.hero2 {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: url("all product img/hero img/forhimdark.webp") no-repeat center center/cover;
+}
+
+@media screen and (max-width: 768px) {
+  .hero-container {
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+
+  .hero1 {
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: url("forherdark.webp") no-repeat center center/cover;
+  }
+
+  .hero2 {
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: url("forhimdark.webp") no-repeat center center/cover;
+  }
+}
+
+/* Text Content */
+
+.hero-content h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 2.5rem;
+  margin: 0.2rem;
+  color: #ddc583;
+  margin-bottom: 0.5rem;
+}
+
+/* font-family: "Playfair Display", serif;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  color: #ddc583; */
+
+.hero-content p {
+  font-family: "Playfair Display", serif;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  margin-bottom: 2rem;
+  margin: 0.5rem;
+  color: rgb(217, 217, 217);
+}
+
+/* font-family: "Montserrat", sans-serif;
+  font-size: 1em;
+  letter-spacing: 2px;
+  margin-bottom: 2rem;
+  color: #dadada; */
+
+.hero-button {
+  letter-spacing: 2px;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  display: inline-block;
+  padding: 1rem 1.8rem;
+  background: white; /* Transparent background */
+  color: rgb(75, 75, 75); /* Text color matches the border */
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-container {
+    grid-template-columns: 1fr; /* Stack sections */
+    gap: 1.5rem;
+  }
+
+  .hero-section {
+    text-align: center;
+  }
+}
+
+/**********************************  SECTION 1, 2, 4, 5- galleri ***********************************/
+
+@media (min-width: 768px) {
+  .collections {
+    background-color: #f6f3ef;
+    padding-top: 3rem;
+    text-align: center;
+    position: relative;
+    padding-bottom: 2rem;
+  }
+}
+
+.collections h1 {
+  color: black;
+  margin: 0.5rem;
+}
+
+.collections p {
+  font-size: 14px;
+  margin: 0.5rem;
+  letter-spacing: 1.5px;
+}
+
+/* Grid Layout */
+.collection-grid {
+  background-color: #f6f3ef;
+  padding: 0.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1FR;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  /*denne del omhandler kun galleriet, og ikke selve den sorte container*/
+  /*Jeg ville gerne have teksten i midten, men det er ikke lykkedes*/
+  .collections {
+    padding-top: 2rem;
+    margin-left: 1rem;
+    background-color: #f6f3ef;
+    text-align: center;
+  }
+
+  .collection-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 1rem;
+    gap: 20px;
+  }
+}
+
+.collection-item {
+  text-align: center;
+  position: relative;
+}
+
+.collection-item img {
+  transition: transform 0.3s ease;
+}
+
+.collection-item:hover img {
+  transform: scale(1.05);
+}
+
+.explore {
+  font-family: "Montserrat", sans-serif;
+  padding: 0.3rem;
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.explore-subtitle {
+  margin-top: 1rem;
+  font-family: "Playfair Display", serif;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  color: black;
+  font-weight: 900;
+}
+
+/**********************************  SECTION 2 ***********************************/
+
+.mellemrum {
+  padding: 1rem;
+}
+
+@media (min-width: 768px) {
+  .mellemrum {
+    padding: 1.4rem;
+  }
+}
+
+/***repeat af section1**/
+
+/**********************************  SECTION 3 - Produkt detaljer ***********************************/
+
+.product-card {
+  width: 300px;
+  padding: 15px;
+  background-color: #f8f8f8;
+  position: relative;
+  text-align: left;
+}
+
+.bestseller-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #555;
+  color: #fff;
+  font-size: 12px;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  border-radius: 3px;
+  letter-spacing: 1px;
+}
+
+.product-title {
+  font-family: "Playfair Display", serif;
+  font-size: 16px;
+  margin: 15px 0 5px;
+  font-weight: bold;
+  color: #000;
+}
+
+.product-details {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  line-height: 1.1rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.product-price {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
+}
+
+/**********************************  SECTION 3 - kampagne ***********************************/
+
+/* Section Styling */
+.split-section {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  background-color: #ff2045eb;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Splits the section into two equal columns */
+  align-items: center; /* Vertically centers content */
+  gap: 2rem; /* Adds spacing between the text and image */
+  padding: 3rem 5%; /* Adds padding around the section */
+}
+
+/* Text Content Styling */
+.text-content {
+  padding: 1rem;
+  text-align: left;
+}
+
+.subtitle {
+  font-family: "Playfair Display", serif;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  color: #ddc583;
+}
+
+.title {
+  font-family: "Playfair Display", serif;
+  font-size: 2.5rem;
+  margin: 0.5rem 0;
+  color: black;
+}
+
+.description {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #000000;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #2e2e2e;
+  text-decoration: none;
+  border-bottom: 1px solid #000;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: border 0.3s ease, color 0.3s ease;
+}
+
+.button:hover {
+  color: #666;
+  border-bottom: 1px solid #666;
+}
+
+/* Image Content Styling */
+.image-content img {
+  width: 100%; /* Ensures the image fills its container */
+  height: auto; /* Maintains the image's aspect ratio */
+  display: block; /* Removes inline spacing */
+  border-radius: 5px; /* Optional: adds rounded corners */
+}
+
+/* Responsive Design for Small Screens */
+@media (max-width: 768px) {
+  .split-section {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .image-content img {
+    margin-top: 1rem;
+  }
+}
+
+.button_2 {
+  font-family: "Montserrat", sans-serif;
+  display: inline-block;
+  margin-top: 1rem;
+  color: #000;
+  text-decoration: none;
+  border-bottom: 1px solid #000;
+  font-size: 14px;
+  letter-spacing: 1px;
+  transition: border 0.3s ease, color 0.3s ease;
+}
+
+.button_2:hover {
+  color: #666;
+  border-bottom: 1px solid #666;
+}
+/**********************************  HERO - VIVID SECTION ***********************************/
+
+/* Vivid Section Styling */
+.vivid-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 2rem;
+  padding: 3rem 5%;
+  background-color: #f0f9ff;
+}
+
+/* Vivid Text Content Styling */
+.vivid-text {
+  padding: 1rem;
+  text-align: left;
+}
+
+.vivid-subtitle {
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 2px;
+  color: #d5d5d5;
+}
+
+.vivid-title {
+  font-family: "Playfair Display", serif;
+  font-size: 42px;
+  margin: 0.5rem 0;
+  color: #ddc583;
+}
+
+.vivid-description {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.vivid-button {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  display: inline-block;
+  margin-top: 1rem;
+  color: #f6f3ef;
+  text-decoration: none;
+  border: 2px solid #f6f3ef;
+  padding: 0.5rem 1.5rem;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.vivid-button:hover {
+  background-color: white;
+  color: black;
+}
+
+/* mobil */
+@media (max-width: 768px) {
+  .vivid-section {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .vivid-image img {
+    margin-top: 1.5rem;
+  }
+}
+
+/**********************************  BLOGGER - FRESH ***********************************/
+
+.fresh-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 2rem;
+  padding: 3rem 5%;
+}
+
+.fresh-text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  padding: 1rem;
+  text-align: left;
+}
+
+.fresh-subtitle {
+  font-family: "Playfair Display", serif;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  color: #ddc583;
+  font-weight: 900;
+}
+
+.fresh-title {
+  font-family: "Playfair Display", serif;
+  line-height: 2.5rem;
+  font-size: 42px;
+  margin: 0.5rem 0;
+  color: black;
+}
+
+.fresh-description {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #444;
+}
+
+.fresh-button {
+  font-family: "Montserrat", sans-serif;
+  display: inline-block;
+  margin-top: 1rem;
+  color: #ff2045eb;
+  text-decoration: none;
+  border: 2px solid #ff2045eb;
+  padding: 0.5rem 1.5rem;
+  border-radius: 30px; /* Rounded button for a youthful look */
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.fresh-button:hover {
+  font-family: "Montserrat", sans-serif;
+  background-color: #ff2045eb;
+  color: #fff; /* White text */
+  border: #ff2045eb;
+}
+
+/* Fresh Image Styling */
+.fresh-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 2px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .fresh-section {
+    grid-template-columns: 1fr; /* Stacks content vertically */
+    text-align: center;
+  }
+
+  .fresh-image img {
+    margin-top: 1.5rem;
+  }
+}
