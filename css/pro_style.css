@@ -36,20 +36,10 @@
 
   .hero1 {
     height: 50vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    background: url("forherdark.webp") no-repeat center center/cover;
   }
 
   .hero2 {
     height: 50vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    background: url("forhimdark.webp") no-repeat center center/cover;
   }
 }
 
