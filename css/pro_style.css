@@ -63,11 +63,6 @@
   margin-bottom: 0.5rem;
 }
 
-/* font-family: "Playfair Display", serif;
-  font-size: 1rem;
-  letter-spacing: 2px;
-  color: #ddc583; */
-
 .hero-content p {
   font-family: "Playfair Display", serif;
   font-size: 1rem;
@@ -77,12 +72,6 @@
   color: rgb(217, 217, 217);
 }
 
-/* font-family: "Montserrat", sans-serif;
-  font-size: 1em;
-  letter-spacing: 2px;
-  margin-bottom: 2rem;
-  color: #dadada; */
-
 .hero-button {
   letter-spacing: 2px;
   font-size: 14px;
@@ -91,16 +80,15 @@
   display: inline-block;
   padding: 1rem 1.8rem;
   background: white; /* Transparent background */
-  color: rgb(75, 75, 75); /* Text color matches the border */
+  color: rgb(75, 75, 75);
   text-decoration: none;
   border-radius: 4px;
   transition: background-color 0.3s ease;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   .hero-container {
-    grid-template-columns: 1fr; /* Stack sections */
+    grid-template-columns: 1fr;
     gap: 1.5rem;
   }
 
@@ -153,6 +141,7 @@
     margin-left: 1rem;
     background-color: #f6f3ef;
     text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   }
 
   .collection-grid {
