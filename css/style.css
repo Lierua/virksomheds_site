@@ -39,6 +39,7 @@ header {
   width: 100%;
   position: fixed;
   padding-bottom: 1rem;
+  z-index: 11;
 }
 
 .scroll-container {
