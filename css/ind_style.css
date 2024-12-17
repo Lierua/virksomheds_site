@@ -1,3 +1,7 @@
+header {
+  z-index: 10;
+}
+
 .index_hero {
   position: relative;
   text-align: center;
@@ -15,35 +19,28 @@
 
 .cta_knap {
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-.cta_knap button {
-  background-color: rgba(0, 0, 0, 0.5);
-  color: #ddc583;
+.vivid-button {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  display: inline-block;
+  margin-top: 1rem;
+  color: #333;
+  text-decoration: none;
   border: 2px solid #ddc583;
-  padding: 5px 15px;
-  font-size: 1rem;
-  cursor: pointer;
-  border-radius: 5px;
+  padding: 0.5rem 1.5rem;
+  border-radius: 30px;
+  background-color: #ddc583;
 }
 
-.index_knap button {
-  border: none;
-  cursor: pointer;
-  background: none;
-  bottom: 0;
-  margin-top: 5px;
+.vivid-button:hover {
+  background-color: #333;
+  color: #ffffff;
 }
-
-.index_knap button::after {
-  content: "→";
-  margin-left: 8px; /* Afstand til tekst */
-  transition: margin-left 0.3s ease;
-}
-
 .værkstedet,
 .nyheder,
 .produkter {
@@ -59,7 +56,6 @@
 .index h1 {
   text-align: center;
   margin-top: 10px;
-  font-size: 1.5rem;
 }
 
 .index1_1_1 p {
