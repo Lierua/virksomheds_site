@@ -90,3 +90,20 @@ header {
     padding: 10px;
   }
 }
+
+@media (max-width: 800px) {
+  .index_hero {
+    height: 700px;
+    overflow: hidden;
+  }
+
+  .index_hero video {
+    object-fit: cover;
+    align-self: stretch;
+    height: 100%;
+  }
+
+  .cta_knap {
+    top: 90%;
+  }
+}
