@@ -3,7 +3,6 @@
 /* Hero Section Container */
 .hero-container {
   margin-bottom: 5rem;
-  margin-top: 0.5rem;
   display: grid;
   grid-template-columns: 1fr 1fr; /* 1-1 layout */
   gap: 0.5rem;
@@ -119,6 +118,8 @@
     text-align: center;
     position: relative;
     padding-bottom: 2rem;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-inline: 10%;
   }
 }
 
