@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 244.9 186">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        opacity: .94;
+      }
+
+      .cls-1, .cls-3, .cls-4 {
+        fill: #dcc582;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #dcc582;
+        stroke-miterlimit: 10;
+        stroke-width: 4px;
+      }
+
+      .cls-3 {
+        font-size: 25.43px;
+      }
+
+      .cls-3, .cls-4 {
+        font-family: MyriadPro-Regular, 'Myriad Pro';
+      }
+
+      .cls-4 {
+        font-size: 35px;
+      }
+    </style>
+  </defs>
+  <text class="cls-4" transform="translate(68.42 82.76) rotate(-75.44)"><tspan x="0" y="0"> </tspan></text>
+  <text class="cls-4" transform="translate(70.07 76.26) rotate(-68.39)"><tspan x="0" y="0"> </tspan></text>
+  <text class="cls-4" transform="translate(70.71 69.96) rotate(-51.58)"><tspan x="0" y="0">M</tspan></text>
+  <text class="cls-4" transform="translate(86.97 49.65) rotate(-27.69)"><tspan x="0" y="0">Ü</tspan></text>
+  <text class="cls-4" transform="translate(105.58 40.13) rotate(-9.07)"><tspan x="0" y="0">L</tspan></text>
+  <text class="cls-4" transform="translate(120.41 37.57) rotate(6.39)"><tspan x="0" y="0">L</tspan></text>
+  <text class="cls-4" transform="translate(135.4 38.99) rotate(22.42)"><tspan x="0" y="0">E</tspan></text>
+  <text class="cls-4" transform="translate(150.01 44.64) rotate(39.45)"><tspan x="0" y="0">R</tspan></text>
+  <text class="cls-4" transform="translate(163.42 55.52) rotate(56.43)"><tspan x="0" y="0">S</tspan></text>
+  <text class="cls-4" transform="translate(171.98 69.09) rotate(68.08)"><tspan x="0" y="0"> </tspan></text>
+  <text class="cls-4" transform="translate(174.53 75.34) rotate(75.17)"><tspan x="0" y="0"> </tspan></text>
+  <text class="cls-4" transform="translate(176.29 81.8) rotate(82.19)"><tspan x="0" y="0"> </tspan></text>
+  <text class="cls-4" transform="translate(177.24 88.4) rotate(89.07)"><tspan x="0" y="0"> </tspan></text>
+  <text class="cls-4" transform="translate(177.39 95.18) rotate(96.07)"><tspan x="0" y="0"> </tspan></text>
+  <text class="cls-4" transform="translate(176.72 101.88) rotate(103.11)"><tspan x="0" y="0"> </tspan></text>
+  <text class="cls-4" transform="translate(175.24 108.42) rotate(110.15)"><tspan x="0" y="0"> </tspan></text>
+  <text class="cls-4" transform="translate(172.97 114.75) rotate(117.21)"><tspan x="0" y="0"> </tspan></text>
+  <text class="cls-3" transform="translate(43.61 112.21) rotate(74.43)"><tspan x="0" y="0"> </tspan></text>
+  <text class="cls-3" transform="translate(45.3 118.17) rotate(70.02)"><tspan x="0" y="0"> </tspan></text>
+  <text class="cls-3" transform="translate(47.46 124.97) rotate(61.08)"><tspan x="0" y="0">G</tspan></text>
+  <text class="cls-3" transform="translate(56.9 141.43) rotate(47.73)"><tspan x="0" y="0">U</tspan></text>
+  <text class="cls-3" transform="translate(69.76 154.92) rotate(36.21)"><tspan x="0" y="0">L</tspan></text>
+  <text class="cls-3" transform="translate(81.26 163.37) rotate(24.42)"><tspan x="0" y="0">D</tspan></text>
+  <text class="cls-3" transform="translate(98.95 170.88) rotate(12.33)"><tspan x="0" y="0">E</tspan></text>
+  <text class="cls-3" transform="translate(113.09 173.79) rotate(2.15)"><tspan x="0" y="0">S</tspan></text>
+  <text class="cls-3" transform="translate(128.21 174.53) rotate(-11.16)"><tspan x="0" y="0">M</tspan></text>
+  <text class="cls-3" transform="translate(150.59 169.33) rotate(-24.68)"><tspan x="0" y="0">E</tspan></text>
+  <text class="cls-3" transform="translate(164.05 163.13) rotate(-36.68)"><tspan x="0" y="0">D</tspan></text>
+  <text class="cls-3" transform="translate(178.92 151.38) rotate(-47.35)"><tspan x="0" y="0">J</tspan></text>
+  <text class="cls-3" transform="translate(186.42 143.23) rotate(-56.22)"><tspan x="0" y="0">E</tspan></text>
+  <ellipse class="cls-2" cx="122.45" cy="93" rx="90.69" ry="90.77"/>
+  <line class="cls-2" x1="175.05" y1="91.68" x2="244.9" y2="91.68"/>
+  <line class="cls-2" y1="91.68" x2="69.85" y2="91.68"/>
+  <polygon class="cls-1" points="122.45 127.49 108.58 89.42 88.58 88.97 122.45 127.49"/>
+  <polygon class="cls-1" points="123.69 127.49 111.38 88.97 135.64 88.97 123.69 127.49"/>
+  <polygon class="cls-1" points="106.49 87.1 100.15 73.68 88.58 87.48 106.49 87.1"/>
+  <polygon class="cls-1" points="111.94 87.48 135.08 87.11 123.88 73.68 111.94 87.48"/>
+  <polygon class="cls-1" points="103.17 73.68 120.71 73.3 109.51 87.48 103.17 73.68"/>
+  <polygon class="cls-1" points="126.87 73.87 144.41 73.49 138.06 87.11 126.87 73.87"/>
+  <polygon class="cls-1" points="140.52 87.1 146.87 73.86 158.43 87.48 140.52 87.1"/>
+  <polygon class="cls-1" points="124.56 127.49 138.44 89.86 158.43 89.42 124.56 127.49"/>
+</svg>

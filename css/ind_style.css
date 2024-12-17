@@ -40,6 +40,7 @@ header {
 .vivid-button:hover {
   background-color: #333;
   color: #ffffff;
+  border: 2px solid #333;
 }
 .værkstedet,
 .nyheder,

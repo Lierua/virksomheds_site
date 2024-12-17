@@ -38,13 +38,20 @@ a {
 header {
   width: 100%;
   position: fixed;
-  height: 120px;
+  padding-bottom: 1rem;
 }
 
 .scroll-container {
   /* height: 15vh; */
   background: #1e1b167f;
   transition: background 0.1s ease-out;
+}
+
+/********Logo********/
+
+#underheader a img {
+  width: 50%;
+  margin-top: 25px;
 }
 
 @media (max-width: 800px) {
@@ -117,7 +124,6 @@ header nav {
 }
 
 #underheader {
-  padding: 1rem;
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -192,6 +198,35 @@ header nav {
 
   .burger-menumono.open span:nth-child(3) {
     transform: translateY(-10px) rotate(-45deg);
+  }
+
+  #underheader {
+    display: flex;
+    justify-content: center; /* Centrerer logoet */
+    align-items: center;
+    width: 100%;
+    position: relative;
+  }
+
+  #underheader a img {
+    width: 50%;
+    margin-top: 10px;
+  }
+
+  .burger-menu {
+    position: absolute;
+    right: 10px; /* Burger-menu til venstre */
+    top: 10px; /* Justering efter behov */
+  }
+
+  header {
+    width: 100%;
+    position: fixed;
+    padding: 3rem;
+  }
+
+  #header {
+    height: 9rem;
   }
 }
 
