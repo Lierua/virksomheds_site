@@ -17,7 +17,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  background: url("all product img/hero img/forherdark.webp") no-repeat center center/cover;
+  background: url("../all_product_img/hero_img/forherdark.webp") no-repeat center center/cover;
 }
 
 .hero2 {
@@ -26,7 +26,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  background: url("all product img/hero img/forhimdark.webp") no-repeat center center/cover;
+  background: url("../all_product_img/hero_img/forhimdark.webp") no-repeat center center/cover;
 }
 
 @media screen and (max-width: 768px) {
