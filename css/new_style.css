@@ -194,6 +194,7 @@ label {
 }
 
 .vivid-button:hover {
+  border: 2px solid #ddc583;
   background-color: #ddc583;
   color: #ffffff;
 }

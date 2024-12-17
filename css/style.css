@@ -42,7 +42,7 @@ header {
 }
 
 .scroll-container {
-  height: 15vh;
+  /* height: 15vh; */
   background: #1e1b167f;
   transition: background 0.1s ease-out;
 }
