@@ -50,8 +50,7 @@ header {
 /********Logo********/
 
 #underheader a img {
-  width: 50%;
-  margin-top: 25px;
+  width: 100%;
 }
 
 @media (max-width: 800px) {
@@ -117,7 +116,6 @@ a {
 }
 
 header nav {
-  padding-top: 1.2rem;
   font-weight: bold;
   width: 400px;
   margin: 0 auto;
@@ -208,25 +206,20 @@ header nav {
     position: relative;
   }
 
-  #underheader a img {
-    width: 50%;
-    margin-top: 10px;
-  }
-
   .burger-menu {
     position: absolute;
     right: 10px; /* Burger-menu til venstre */
-    top: 10px; /* Justering efter behov */
+    top: 31px; /* Justering efter behov */
   }
 
   header {
     width: 100%;
     position: fixed;
-    padding: 3rem;
   }
 
   #header {
-    height: 9rem;
+    height: 8rem;
+    padding-bottom: 0;
   }
 }
 
@@ -279,4 +272,63 @@ header nav {
 
 .text-change {
   color: white;
+}
+
+.logo {
+  aspect-ratio: 1/1;
+  height: 8rem;
+}
+
+footer {
+  min-height: 3rem;
+  width: 100%;
+  text-align: center;
+  margin-right: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #fff;
+  bottom: 0;
+}
+
+footer {
+  height: 20rem;
+  background-color: #ddc583;
+}
+
+footer h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #f8faf8;
+}
+
+.icon {
+  width: 20%;
+}
+
+.icons {
+  width: 15%;
+}
+
+.flexicon {
+  display: flex;
+  justify-content: space-between;
+}
+
+.iconimg {
+  aspect-ratio: 1/1;
+}
+
+.iconimg2 {
+  aspect-ratio: 1/1;
+  scale: 1.2;
+}
+
+@media (max-width: 800px) {
+  .icons {
+    width: 50%;
+  }
+}
+
+.air8 {
+  height: 8vh;
+  width: 100%;
 }
