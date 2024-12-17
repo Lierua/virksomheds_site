@@ -89,7 +89,7 @@ label {
 .section {
   background-color: #f6f3ef;
   padding: 2rem;
-  height: 350px;
+  height: auto;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -109,7 +109,6 @@ label {
     width: 95%;
   }
   .section {
-    height: auto;
     display: grid;
   }
   .newsimg {
@@ -122,7 +121,7 @@ label {
     display: grid;
   }
   #heroimg dotlottie-player {
-    scale: 4;
+    scale: 6;
     align-self: center;
   }
 }
@@ -138,4 +137,63 @@ label {
     grid-template-columns: 1fr 3fr;
     gap: 20px;
   }
+  .lotscale {
+    scale: 1.7;
+  }
+}
+
+/**********************************  HERO - VIVID SECTION ***********************************/
+
+/* Vivid Section Styling */
+.vivid-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 2rem;
+  padding: 3rem 5%;
+  background-color: #f0f9ff;
+}
+
+/* Vivid Text Content Styling */
+.vivid-text {
+  padding: 1rem;
+  text-align: left;
+}
+
+.vivid-subtitle {
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 2px;
+  color: #d5d5d5;
+}
+
+.vivid-title {
+  font-family: "Playfair Display", serif;
+  font-size: 42px;
+  margin: 0.5rem 0;
+  color: #ddc583;
+}
+
+.vivid-description {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.vivid-button {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  display: inline-block;
+  margin-top: 1rem;
+  color: #333;
+  text-decoration: none;
+  border: 2px solid #333;
+  padding: 0.5rem 1.5rem;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.vivid-button:hover {
+  background-color: #ddc583;
+  color: #ffffff;
 }
