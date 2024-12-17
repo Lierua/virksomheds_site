@@ -8,16 +8,18 @@
     <title>Home</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pavanam&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/wor_style.css">
 </head>
 
 <body>
-    <header class="flexrow">
+    <header id="header" class="flexrow scroll-container">
         <div id="underheader">
             <a href="index.html"> Logo </a>
-            <h2 class="textcenter center">
+            <h2 class="textcenter center text-change">
                 Müller
             </h2>
         </div>
@@ -27,24 +29,44 @@
             <span></span>
         </div>
         <nav>
-            <ul class="menu">
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="news.html">NYHEDER</a></li>
-                <li><a href="workshop.html">VÆRKSTEDET</a></li>
-                <li><a href="products.html">SMYKKER</a></li>
+            <ul class="menu content">
+                <li><a class="text-change" href="index.html">HOME</a></li>
+                <li><a class="text-change" href="news.html">NYHEDER</a></li>
+                <li><a class="text-change" href="workshop.html">VÆRKSTEDET</a></li>
+                <li class="dropdown">
+                    <a class="text-change" href="products.html"
+                        onclick="toggleDropdown(event, 'products-dropdown')">SMYKKER</a>
+                    <ul class="dropdown-menu" id="products-dropdown">
+                        <li><a href="products.html">Alle Produkter</a></li>
+                        <li><a href="rings.html">Rings</a></li>
+                        <li><a href="necklaces.html">Necklaces</a></li>
+                        <li><a href="bracelets.html">Bracelets</a></li>
+                    </ul>
+                </li>
             </ul>
         </nav>
     </header>
     <main>
-        <div class="hero-container">
+        <div id="heroimg">
+            <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+                type="module"></script>
+            <dotlottie-player src="https://lottie.host/fdc29093-3526-458b-aa14-4d465af12998/tqHYhGrbZq.lottie"
+                background="transparent" speed="1" style="width: 100%; height: auto;" loop autoplay></dotlottie-player>
+            <div class="text-overlay">
+                <p class="line1">Müllers Værksted</p>
+                <p class="line2">Håndværk & Historie</p>
+            </div>
+        </div>
+
+        <!-- <div class="hero-container">
             <img class="hero-billede" src="workshop_photos/hero-billede_2.webp" alt="forsidebillede">
 
             <div class="text-overlay">
                 <p class="line1">Müllers Værksted</p>
                 <p class="line2">Håndværk & Historie</p>
             </div>
-        </div>
-        <div class="text-billede-grid">
+        </div> -->
+        <div class="text-billede-grid section1">
             <div class="text-content1">
 
                 <div>
@@ -87,10 +109,10 @@
             </div>
         </div>
 
-        <div class="text-billede-grid2">
+        <div class="text-billede-grid2 section2">
 
             <div class="billede-medtekst">
-                <img src="workshop_photos/billede3.webp" alt="billede 3">
+                <img class="img-billede3" src="workshop_photos/billede3.webp" alt="billede 3">
 
             </div>
 
@@ -126,7 +148,7 @@
                 </div>
 
                 <div class="center-container">
-                    <a href="products.html" class="center-button">Udforsk produkter</a>
+                    <a href="products.html" class="vivid-button">Udforsk produkter →</a>
                 </div>
             </div>
 
