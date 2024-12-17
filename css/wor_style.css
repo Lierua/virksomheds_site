@@ -2,21 +2,9 @@
 
 /* Container til hero-billedet */
 
-/* .hero-container {
-  position: relative;
-  width: 95%;
-  margin: 0 auto;
-  text-align: center;
+header {
+  z-index: 10;
 }
-
-.hero-container img {
-  width: 100%; 
-  height: auto;
-  display: block;
-  margin-top: 3rem;
-  margin-bottom: -1.5rem;
-  filter: brightness(95%) contrast(100%) sepia(20%) saturate(110%);
-} */
 #heroimg {
   /* height: 700px; */
   width: 100%;
@@ -70,11 +58,10 @@ h2 {
 .p-tekst {
   margin-top: 1rem;
   line-height: 20px;
-  font-family: "Playfair Display", serif;
   font-style: normal;
 }
 p {
-  font-size: 17px;
+  font-size: 15px;
 }
 
 /******* billede og tekst grid **********/
@@ -127,6 +114,7 @@ p {
   display: flex;
   width: 100%;
   padding-bottom: 0rem;
+  overflow: hidden;
 }
 
 /********* grid billeder *******/
@@ -157,22 +145,23 @@ p {
 }
 
 /* Knap styling */
-.center-button {
-  padding: 12px 24px;
-  font-size: 1rem;
-  color: #000000;
-  background-color: #ffffff;
-  border: 4px solid #ddc583;
-  border-radius: 30px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  margin-top: 2rem;
+
+.vivid-button {
   font-family: "Montserrat", sans-serif;
-  letter-spacing: 1px;
+  font-size: 14px;
+  display: inline-block;
+  margin-top: 1rem;
+  color: #202124;
+  text-decoration: none;
+  border: 2px solid #ddc583;
+  padding: 0.5rem 1.5rem;
+  border-radius: 30px;
+  transition: all 0.3s ease;
 }
 
-.center-button:hover {
+.vivid-button:hover {
   background-color: #ddc583;
+  color: black;
 }
 
 /******* carousel *********/
@@ -212,7 +201,7 @@ p {
     color: #202124;
   }
   p {
-    font-size: 15px;
+    font-size: 13px;
   }
   .grid-container {
     grid-template-columns: 1fr;
@@ -227,18 +216,18 @@ p {
     margin-top: 0.5rem;
   }
   /* Knap styling */
-  .center-button {
-    padding: 10px 22px;
-    font-size: 0.7rem;
-    color: #202124;
-    background-color: #ffffff;
-    border: 4px solid #ddc583;
-    border-radius: 30px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin-top: 1.5rem;
+
+  .vivid-button {
     font-family: "Montserrat", sans-serif;
-    letter-spacing: 1px;
+    font-size: 11px;
+    display: inline-block;
+    margin-top: 1rem;
+    color: #202124;
+    text-decoration: none;
+    border: 2px solid #ddc583;
+    padding: 0.5rem 1.5rem;
+    border-radius: 30px;
+    transition: all 0.3s ease;
   }
 
   .center-button:hover {
@@ -314,4 +303,8 @@ p {
     z-index: -1;
     position: relative;
   }
+}
+img {
+  object-fit: cover;
+  align-self: stretch;
 }
