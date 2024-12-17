@@ -18,8 +18,8 @@ header {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white; /* Juster tekstfarven efter behov */
-  font-size: 37px; /* Juster størrelsen på teksten */
+  color: white;
+  font-size: 37px;
   font-weight: bold;
   text-align: center;
   font-family: "Playfair Display", serif;
