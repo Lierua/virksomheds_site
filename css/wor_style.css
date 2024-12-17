@@ -304,7 +304,12 @@ p {
     position: relative;
   }
 }
-img {
+.text-billede-grid img {
+  object-fit: cover;
+  align-self: stretch;
+}
+
+.text-billede-grid2 img {
   object-fit: cover;
   align-self: stretch;
 }
